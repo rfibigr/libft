@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rfibigr <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: rfibigr <rfibigr@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/07 18:33:17 by rfibigr           #+#    #+#             */
-/*   Updated: 2017/11/25 10:01:55 by rfibigr          ###   ########.fr       */
+/*   Created: 2017/11/26 12:06:35 by rfibigr           #+#    #+#             */
+/*   Updated: 2017/11/26 12:06:45 by rfibigr          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,26 +14,22 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	unsigned char	*dstchar;
-	unsigned char	*srcchar;
 	size_t			i;
 
 	i = 0;
-	dstchar = (unsigned char *)dst;
-	srcchar = (unsigned char *)src;
-	if (srcchar == dstchar)
-		return (dstchar);
-	if (srcchar < dstchar)
+	if ((unsigned char *)src == (unsigned char *)dst)
+		return (dst);
+	if ((unsigned char*)src < (unsigned char *)dst)
 		while ((int)len > 0)
 		{
-			dstchar[len - 1] = srcchar[len - 1];
+			((unsigned char *)dst)[len - 1] = ((unsigned char *)src)[len - 1];
 			len--;
 		}
 	else
 		while (i < len)
 		{
-			dstchar[i] = srcchar[i];
+			((unsigned char *)dst)[i] = ((unsigned char *)src)[i];
 			i++;
 		}
-	return (dstchar);
+	return (dst);
 }
