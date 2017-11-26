@@ -6,7 +6,7 @@
 #    By: rfibigr <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/06 11:36:14 by rfibigr           #+#    #+#              #
-#    Updated: 2017/11/25 18:43:49 by rfibigr          ###   ########.fr        #
+#    Updated: 2017/11/26 10:31:56 by rfibigr          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -71,6 +71,8 @@ SRC = ./ft_memset.c\
 	./ft_lstadd.c\
 	./ft_lstiter.c\
 	./ft_lstmap.c\
+	./ft_strrev.c\
+	./ft_lgnbr.c\
 
 OBJ = $(SRC:.c=.o)
 
