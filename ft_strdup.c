@@ -6,13 +6,13 @@
 /*   By: rfibigr <rfibigr@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/04 11:39:09 by rfibigr           #+#    #+#             */
-/*   Updated: 2017/11/25 16:03:01 by rfibigr          ###   ########.fr       */
+/*   Updated: 2017/12/01 20:10:20 by rfibigr          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static void	ft_strcp(char *copy, char *src)
+static void	ft_strcp(char *copy, const char *src)
 {
 	int		i;
 
@@ -25,14 +25,14 @@ static void	ft_strcp(char *copy, char *src)
 	copy[i] = '\0';
 }
 
-char		*ft_strdup(char *str)
+char		*ft_strdup(const char *s)
 {
 	int		len;
 	char	*strdup;
 
-	len = ft_strlen(str);
+	len = ft_strlen(s);
 	if (!(strdup = (char *)malloc(sizeof(char) * (len + 1))))
 		return (NULL);
-	ft_strcp(strdup, str);
+	ft_strcp(strdup, s);
 	return (strdup);
 }
