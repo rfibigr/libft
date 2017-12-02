@@ -6,7 +6,7 @@
 /*   By: rfibigr <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/07 15:09:55 by rfibigr           #+#    #+#             */
-/*   Updated: 2017/12/01 20:09:24 by rfibigr          ###   ########.fr       */
+/*   Updated: 2017/12/02 11:30:04 by rfibigr          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,5 +86,10 @@ void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 char				*ft_strrev(char *s);
 int					ft_lgnbr(int n);
+void				ft_list_push_back(t_list **begin_list, void const *content,
+									size_t content_size);
+void				ft_list_clear(t_list **begin_list);
+t_list				*ft_list_last(t_list *begin_list);
+int					ft_list_size(t_list *begin_list);
 
 #endif
