@@ -6,20 +6,19 @@
 /*   By: rfibigr <rfibigr@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/07 17:12:43 by rfibigr           #+#    #+#             */
-/*   Updated: 2018/05/17 09:51:02 by rfibigr          ###   ########.fr       */
+/*   Updated: 2018/10/15 18:33:54 by rfibigr          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef GET_NEXT_LINE_H
 # define GET_NEXT_LINE_H
 
-# define BUFF_SIZE 100
-# define OPEN_MAX _SC_OPEN_MAX  // Pour compilation sur linux
-# include "libft.h"
 # include <stdlib.h>
 # include <unistd.h>
 # include <fcntl.h>
 # include <limits.h>
+# include "libft.h"
+# define BUFF_SIZE 4096
 
 typedef struct	s_struct
 {

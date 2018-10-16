@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rfibigr <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: rfibigr <rfibigr@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/07 15:09:55 by rfibigr           #+#    #+#             */
-/*   Updated: 2018/05/17 10:58:54 by rfibigr          ###   ########.fr       */
+/*   Updated: 2018/10/15 19:37:37 by rfibigr          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,9 @@
 # include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
+# include "ft_printf.h"
+# include "get_next_line.h"
+
 
 typedef struct		s_list
 {
