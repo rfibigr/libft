@@ -1,41 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*   ft_isnumber.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rfibigr <rfibigr@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/16 18:03:59 by rfibigr           #+#    #+#             */
-/*   Updated: 2018/10/23 13:46:25 by rfibigr          ###   ########.fr       */
+/*   Created: 2018/10/26 10:12:39 by rfibigr           #+#    #+#             */
+/*   Updated: 2018/10/29 10:00:05 by rfibigr          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strjoin(char const *s1, char const *s2)
+int		ft_isnumber(char *str)
 {
-	int		len;
-	char	*str;
-	int		len_s1;
-	int		i;
+	int i;
 
-	if (s1 && s2)
+	i = 0;
+	if (!str)
+		return (0);
+	while (str[i])
 	{
-		len_s1 = ft_strlen(s1);
-		len = (len_s1 + ft_strlen(s2));
-		if (!(str = (char *)malloc(sizeof(char) * (len + 1))))
-			return (NULL);
-		i = 0;
-		while (i < len)
-		{
-			if (i < len_s1)
-				str[i] = s1[i];
-			else
-				str[i] = s2[i - len_s1];
-			i++;
-		}
-		str[i] = '\0';
-		return (str);
+		if (!ft_isdigit(str[i]) && (str[0] != '-' || str[0] != '+'))
+			return (0);
+		i++;
 	}
-	return (NULL);
+	return (1);
 }

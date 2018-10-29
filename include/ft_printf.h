@@ -6,7 +6,7 @@
 /*   By: rfibigr <rfibigr@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/30 12:34:06 by rfibigr           #+#    #+#             */
-/*   Updated: 2018/10/15 18:35:12 by rfibigr          ###   ########.fr       */
+/*   Updated: 2018/10/26 10:20:13 by rfibigr          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -200,5 +200,6 @@ int					is_signed(char a);
 
 int					is_zero_printed(t_param *param);
 int					is_space_printed(t_param *param);
+int					ft_isnumber(char *str);
 
 #endif

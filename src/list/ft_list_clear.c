@@ -6,7 +6,7 @@
 /*   By: rfibigr <rfibigr@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/02 11:24:22 by rfibigr           #+#    #+#             */
-/*   Updated: 2017/12/02 11:24:24 by rfibigr          ###   ########.fr       */
+/*   Updated: 2018/10/26 11:55:19 by rfibigr          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,11 @@ void	ft_list_clear(t_list **begin_list)
 {
 	t_list	*tmp;
 
-	tmp = *begin_list;
-	while (tmp)
+	while (*begin_list)
 	{
 		tmp = *begin_list;
-		tmp = tmp->next;
-		*begin_list = tmp;
+		*begin_list = (*begin_list)->next;
 		free(tmp);
+		tmp = NULL;
 	}
 }
