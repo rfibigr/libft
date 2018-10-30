@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_list_push_back.c                                :+:      :+:    :+:   */
+/*   ft_list_push_front.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rfibigr <rfibigr@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/12/02 11:17:15 by rfibigr           #+#    #+#             */
-/*   Updated: 2018/10/30 16:07:19 by rfibigr          ###   ########.fr       */
+/*   Created: 2018/10/30 15:37:31 by rfibigr           #+#    #+#             */
+/*   Updated: 2018/10/30 15:56:21 by rfibigr          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_list_push_back(t_list **begin, void const *content)
+void	ft_list_push_front(t_list **begin, void const *content)
 {
 	t_list	*to_add;
 	t_list	*tmp;
@@ -23,9 +23,7 @@ void	ft_list_push_back(t_list **begin, void const *content)
 		*begin = to_add;
 	else
 	{
-		if (tmp)
-		while (tmp->next)
-			tmp = tmp->next;
-		tmp->next = ft_lstnew(content);
+		to_add->next = *begin;
+		*begin = to_add;
 	}
 }

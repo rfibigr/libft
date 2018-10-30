@@ -6,7 +6,7 @@
 #    By: rfibigr <rfibigr@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/12/01 16:20:20 by rfibigr           #+#    #+#              #
-#    Updated: 2018/10/26 10:19:30 by rfibigr          ###   ########.fr        #
+#    Updated: 2018/10/30 15:52:34 by rfibigr          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 .PHONY: all, clean, fclean, re
@@ -64,14 +64,16 @@ SRC_FT_PRINTF	=	ft_printf.c \
 
 SRC_LIST =			ft_list_clear.c \
 					ft_list_last.c \
+					ft_list_push_back_cpy.c \
 					ft_list_push_back.c \
+					ft_list_push_front.c \
 					ft_list_size.c \
 					ft_lstadd.c \
 					ft_lstdel.c \
 					ft_lstdelone.c \
 					ft_lstiter.c \
-					ft_lstmap.c \
 					ft_lstnew.c \
+					ft_lstnewcpy.c \
 
 SRC_MEMORY =		ft_bzero.c \
 					ft_memalloc.c \
