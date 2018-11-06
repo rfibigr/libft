@@ -6,7 +6,7 @@
 #    By: rfibigr <rfibigr@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/12/01 16:20:20 by rfibigr           #+#    #+#              #
-#    Updated: 2018/10/30 15:52:34 by rfibigr          ###   ########.fr        #
+#    Updated: 2018/11/06 13:03:27 by rfibigr          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 .PHONY: all, clean, fclean, re
@@ -135,6 +135,7 @@ SRC_TEST_IS =		ft_isalnum.c\
 					ft_isdigit.c\
 					ft_isprint.c\
 					ft_isnumber.c\
+					ft_isinteger.c \
 
 
 #/********************** PATH  *********************/

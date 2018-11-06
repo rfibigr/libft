@@ -6,7 +6,7 @@
 /*   By: rfibigr <rfibigr@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/07 15:09:55 by rfibigr           #+#    #+#             */
-/*   Updated: 2018/10/30 15:54:10 by rfibigr          ###   ########.fr       */
+/*   Updated: 2018/11/06 13:08:57 by rfibigr          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@
 # include "ft_printf.h"
 # include "get_next_line.h"
 
+# define OPEN_MAX 216
 /*
 ** --------------------------------------------
 ** ------------------ STRUCT ------------------
@@ -68,6 +69,7 @@ int					ft_isdigit(int c);
 int					ft_isalnum(int c);
 int					ft_isascii(int c);
 int					ft_isprint(int c);
+int					ft_isinteger(char *s);
 int					ft_toupper(int c);
 int					ft_tolower(int c);
 void				*ft_memalloc(size_t size);
