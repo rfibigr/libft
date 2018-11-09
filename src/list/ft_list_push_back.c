@@ -6,7 +6,7 @@
 /*   By: rfibigr <rfibigr@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/02 11:17:15 by rfibigr           #+#    #+#             */
-/*   Updated: 2018/10/30 16:07:19 by rfibigr          ###   ########.fr       */
+/*   Updated: 2018/11/09 17:03:11 by rfibigr          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,10 @@ void	ft_list_push_back(t_list **begin, void const *content)
 	else
 	{
 		if (tmp)
-		while (tmp->next)
-			tmp = tmp->next;
-		tmp->next = ft_lstnew(content);
+		{
+			while (tmp->next)
+				tmp = tmp->next;
+		}
+		tmp->next = to_add;
 	}
 }

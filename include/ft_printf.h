@@ -6,7 +6,7 @@
 /*   By: rfibigr <rfibigr@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/30 12:34:06 by rfibigr           #+#    #+#             */
-/*   Updated: 2018/10/26 10:20:13 by rfibigr          ###   ########.fr       */
+/*   Updated: 2018/11/09 17:01:52 by rfibigr          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,16 +20,15 @@
 # include <stdio.h>
 # include <math.h>
 # include "libft.h"
-# define BUFF_SIZE 4096
 
 # define FLAG_NUMBER 5
 # define TRUE 1
 # define FALSE 0
+# define BUFF_SIZE 4096
 
 /*
 ** ***** DATA STRUCT *******
 */
-
 typedef	struct		s_buff
 {
 	char			str[BUFF_SIZE];

@@ -6,7 +6,7 @@
 /*   By: rfibigr <rfibigr@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/07 15:09:55 by rfibigr           #+#    #+#             */
-/*   Updated: 2018/11/07 20:15:32 by rfibigr          ###   ########.fr       */
+/*   Updated: 2018/11/09 17:01:26 by rfibigr          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@
 # include "ft_printf.h"
 # include "get_next_line.h"
 
-# define OPEN_MAX 216
 /*
 ** --------------------------------------------
 ** ------------------ STRUCT ------------------
@@ -124,6 +123,5 @@ void				ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstnew(void const *content);
 t_list				*ft_lstnewcpy(void const *content, size_t content_size);
-
 
 #endif

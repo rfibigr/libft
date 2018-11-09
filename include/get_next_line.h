@@ -6,7 +6,7 @@
 /*   By: rfibigr <rfibigr@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/07 17:12:43 by rfibigr           #+#    #+#             */
-/*   Updated: 2018/10/15 18:33:54 by rfibigr          ###   ########.fr       */
+/*   Updated: 2018/11/09 15:16:33 by rfibigr          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include <fcntl.h>
 # include <limits.h>
 # include "libft.h"
+
 # define BUFF_SIZE 4096
 
 typedef struct	s_struct

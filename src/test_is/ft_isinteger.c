@@ -6,7 +6,7 @@
 /*   By: rfibigr <rfibigr@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/06 12:59:42 by rfibigr           #+#    #+#             */
-/*   Updated: 2018/11/06 13:20:41 by rfibigr          ###   ########.fr       */
+/*   Updated: 2018/11/09 17:05:40 by rfibigr          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,12 +38,12 @@ int		ft_isinteger(char *s)
 	{
 		nbr = nbr * 10;
 		nbr = nbr + *s - '0';
-		if ((nbr > INT_MAX && neg == 1) || -nbr < -2147483648 )
+		if ((nbr > INT_MAX && neg == 1) || -nbr < -2147483648)
 			return (0);
 		s = s + 1;
 	}
 	s = skip_space(s);
 	if (*s)
-			return (0);
+		return (0);
 	return (1);
 }
