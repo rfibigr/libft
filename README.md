@@ -254,11 +254,11 @@ List of libc function
 
 ## get_next_line
 
-See Readme of get_next_line project
+See Readme of [get_next_line project](https://github.com/rfibigr/get_next_line)
 
 ## ft_printf
 
-See Readme of get_next_line project
+See Readme of [ft_printf](https://github.com/rfibigr/ft_printf)
 
 ## How to use
 
